@@ -1,0 +1,63 @@
+.app {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  .app-content {
+    flex: 1;
+  }
+  
+.home-cover{
+    background-image: url('../images/homepage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-cover{
+    background-image: url('../images/about.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-work{
+    padding-top: 1.5rem;
+}
+
+.submenu-slide{
+    padding:5px;
+}
+.navbar{
+    box-shadow:0 1px 0 0 #f5f5f5
+}
+
+.submenu-slide h2{
+    font-size: 18px;
+}
+
+.submenu-slide p{
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+
+.slick-slide {
+    padding: 10px;
+}
+
+
+
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 250ms ease-in;
+  }
+
+#navMenu .navbar-item:hover{
+      background: #ff6666;
+      color:white;
+  }
