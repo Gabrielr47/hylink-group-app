@@ -1,24 +1,13 @@
 import React, { Component } from 'react';
-import SlidesWork from './SlidesWork';
 
 import Cover from './Cover';
 
-
-class Home extends Component {
+class About extends Component {
     render() {
         return (
             <div>
-                
-                <Cover cover="homepage" title="Think Hylink" subtitle="We are China's largest independent digital advertising agency."/>
 
-                <section className="section section-work">
-                    <div className="container">
-                        <h1 className="title">Work</h1>
-                        <h2 className="subtitle">View all of our successful cases.</h2>
-                    </div>
-                    <br />
-                    <SlidesWork />
-                </section>
+                <Cover cover="about" title="Think Hylink" subtitle="Think Dynamic" />
 
                 <section className="hero is-dark">
                     <div className="hero-body">
@@ -37,4 +26,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default About;

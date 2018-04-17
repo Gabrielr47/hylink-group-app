@@ -1,5 +1,21 @@
+.app {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  .app-content {
+    flex: 1;
+  }
+  
 .home-cover{
     background-image: url('../images/homepage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-cover{
+    background-image: url('../images/about.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -7,9 +23,7 @@
 .section-work{
     padding-top: 1.5rem;
 }
-.footer{
-    padding-bottom: 1rem;
-}
+
 .submenu-slide{
     padding:5px;
 }
@@ -30,3 +44,20 @@
 .slick-slide {
     padding: 10px;
 }
+
+
+
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 250ms ease-in;
+  }
+
+#navMenu .navbar-item:hover{
+      background: #ff6666;
+      color:white;
+  }

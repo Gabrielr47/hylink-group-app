@@ -52,7 +52,7 @@ const Footer = () => {
                 </div>
 
             </div>
-            <br/>
+            <br />
             <div className="content has-text-centered">
                 <p>© Copyright 2018 HYLINK · All Rights Reserved.</p>
             </div>

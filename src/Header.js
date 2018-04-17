@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -32,9 +33,10 @@ const Header = () => {
             <nav className="navbar is-black is-fixed-top" aria-label="main navigation">
                 <div className="container">
                     <div className="navbar-brand">
-                        <a className="navbar-item" href="/">
+
+                        <Link className="navbar-item" to="/">
                             <img src="./images/hylink-logo.png" alt="We are China's largest independent digital advertising agency." width="128" height="37" />
-                        </a>
+                        </Link>
 
                         <div role="button" className="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
                             <span aria-hidden="true"></span>
@@ -46,33 +48,20 @@ const Header = () => {
 
                     <div id="navMenu" className="navbar-menu">
                         <div className="navbar-start">
-                            <a className="navbar-item" href="/">Home</a>
-                            <a className="navbar-item" href="/">About</a>
-                            <a className="navbar-item" href="/">Work</a>
-                            <a className="navbar-item" href="/">Offices</a>
+                            <NavLink className="navbar-item" to="/">Home</NavLink>
+                            <NavLink className="navbar-item" to="/about">About</NavLink>
+                            <NavLink className="navbar-item" to="/work">Work</NavLink>
+                            <NavLink className="navbar-item" to="/office">Offices</NavLink>
                         </div>
                         <div className="navbar-end">
-                            <a className="navbar-item" href="/">Blog</a>
-                            <a className="navbar-item" href="/">Services</a>
-                            <a className="navbar-item" href="/">Clients</a>
-                            <a className="navbar-item" href="/">Careers</a>
+                            <NavLink className="navbar-item" to="/blog">Blog</NavLink>
+                            <NavLink className="navbar-item" to="/services">Services</NavLink>
+                            <NavLink className="navbar-item" to="/clients">Clients</NavLink>
+                            <NavLink className="navbar-item" to="/careers">Careers</NavLink>
                         </div>
                     </div>
                 </div>
             </nav>
-            
-            <section className="hero is-medium home-cover">
-                <div className="hero-body">
-                    <div className="container">
-                        <h1 className="title has-text-white">
-                            Think Hylink
-                            </h1>
-                        <h2 className="subtitle has-text-white">
-                            We are China's largest independent digital advertising agency.
-                        </h2>
-                    </div>
-                </div>
-            </section>
         </header>
     )
 }
