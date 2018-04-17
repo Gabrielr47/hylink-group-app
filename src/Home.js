@@ -16,11 +16,11 @@ class Home extends Component {
                     <SlidesWork />
                 </section>
 
-                <section class="hero is-dark">
-                    <div class="hero-body">
-                        <div class="container">
-                            <h1 class="title">About</h1>
-                            <h2 class="subtitle">
+                <section className="hero is-dark">
+                    <div className="hero-body">
+                        <div className="container">
+                            <h1 className="title">About</h1>
+                            <h2 className="subtitle">
                                 <strong>Independent </strong> and we are proud to stay that way. Our mission is simple: to help brands navigate the Chinese digital landscape.
                             </h2>
                         </div>
